@@ -3,7 +3,7 @@ import Calculator from "@/page/Calculator.vue"
 import Home from "@/page/home.vue"
  import bin2dec from "@/page/bin2dec.vue"
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
