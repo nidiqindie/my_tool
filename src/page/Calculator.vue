@@ -28,10 +28,10 @@
 </template>
 
 <script setup lang="ts">
-import { isNumber } from 'element-plus/es/utils/types.mjs';
+
 import { ref } from 'vue';
 const the_input = ref('');
-const onKeyPress = (event) => {
+const onKeyPress = (event: KeyboardEvent) => {
   if (event.key === 'Enter') {
     input('=');
   }
