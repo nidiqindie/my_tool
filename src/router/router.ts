@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Calculator from "@/page/Calculator.vue"
 import Home from "@/page/home.vue"
  import bin2dec from "@/page/bin2dec.vue"
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
